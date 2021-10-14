@@ -1,7 +1,20 @@
 //Aquí va la comunicacion con el DOM 
-import { searchMovie } from "/app.js";
+import { getMovieAPI } from "./data.js";
+console.log(getMovieAPI)
+
+import { getMovieAPIActors} from "./data.js";
+console.log(getMovieAPIActors)
 
 
-//BRING BUTTON TO GIVE A FUNCTION
-let buttonSearch = document.getElementById("searchButton")
-buttonSearch.addEventListener("click", searchMovie)
+let searchValue = document.getElementById("searchInput").value
+getMovieAPI(searchValue) 
+
+let searchMovie = ()=>{
+    let searchValue = document.getElementById("searchInput").value 
+    getMovieAPI (searchValue)
+}
+
+let searchButton= document.getElementById ("searchButton")
+searchButton.addEventListener('click', searchMovie)
+//darle funcion al boton de busqueda
+
