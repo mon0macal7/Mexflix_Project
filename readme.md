@@ -48,4 +48,4 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 
 ## Diagrama de flujo
 
-![Pantalla cinco](.src/../assets/melody_flex.jpeg)
+![Diagrama de flujo](.src/../assets/melody_flex-2.jpeg)
