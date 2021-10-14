@@ -1,0 +1,24 @@
+{
+  "name": "mexflix",
+  "version": "1.0.0",
+  "description": "Movie cathalogue to find some musical movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mon0macal7/Mexflix_Project.git"
+  },
+  "keywords": [
+    "musical",
+    "movies",
+    "selection"
+  ],
+  "author": "Mónica Macal Hernández",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mon0macal7/Mexflix_Project/issues"
+  },
+  "homepage": "https://github.com/mon0macal7/Mexflix_Project#readme"
+}
