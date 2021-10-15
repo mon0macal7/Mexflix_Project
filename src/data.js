@@ -4,8 +4,10 @@ let renderingMovie = (movieData) => {
 
 let movieTitle = document.getElementById("movie-name") 
 let movieImg = document.getElementById("movie-img")
+let movieActors = document.getElementById("actors")
 movieTitle.innerHTML= movieData.Title
 movieImg.setAttribute("src",movieData.Poster) 
+movieActors.innerHTML =movieData.Actors
 }
 
 

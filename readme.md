@@ -20,9 +20,10 @@ En esta página se muestra un catálogo de algunas películas musicales, y se di
 
 ## 2. Definición de usuario:
 
-Esta página esta dirigida a personas que se consideran melómanas.
 
-Es útil para profesores y estudiantes de teatro, danza y musica, que pueden conocer a tráves de estas peliculas historias, que pueden inspirarles y ser didacticas para su aprendizaje y formación. 
+
+El grupo de usuarios al que va dirigido el producto osn profesores y estudiantes de teatro, danza y música.
+La utilizacion de la plataforma puede ser didáctica para su aprendizaje y formación. 
 
 ## Historias de usuario:
 
@@ -38,7 +39,8 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 
 ![Texto alternativo](.src/../assets/Kanban_process.png)
 
-## Bocetos del proyecto
+
+## 3. UI(user interface)
 
 ![Pantalla uno](.src/../assets/screen1.jpg)
 ![Pantalla dos](.src/../assets/screen2.jpg)
@@ -49,3 +51,10 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 ## Diagrama de flujo
 
 ![Diagrama de flujo](.src/../assets/melody_flex-2.jpeg)
+
+![Prototipo screen 1](.src/../assets/Proto_screen1.png)
+![Prototipo screen 2](.src/../assets/prototype.png)
+
+##  CopyRight
+
+© Copyright 2021-Proyecto#4- Mexflix streaming by Monica Macal

@@ -2,8 +2,8 @@
 import { getMovieAPI } from "./data.js";
 console.log(getMovieAPI)
 
-import { getMovieAPIActors} from "./data.js";
-console.log(getMovieAPIActors)
+/*import { getMovieAPIActors} from "./data.js";
+console.log(getMovieAPIActors)*/
 
 
 let searchValue = document.getElementById("searchInput").value
