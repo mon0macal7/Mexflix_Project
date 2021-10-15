@@ -38,7 +38,8 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 
 ![Texto alternativo](.src/../assets/Kanban_process.png)
 
-## Bocetos del proyecto
+
+## 3. UI(user interface)
 
 ![Pantalla uno](.src/../assets/screen1.jpg)
 ![Pantalla dos](.src/../assets/screen2.jpg)
@@ -49,3 +50,6 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 ## Diagrama de flujo
 
 ![Diagrama de flujo](.src/../assets/melody_flex-2.jpeg)
+
+![Prototipo](.src/../assets/prototype.png)
+
