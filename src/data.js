@@ -2,12 +2,17 @@
 let renderingMovie = (movieData) => {
     console.log(movieData)
 
-let movieTitle = document.getElementById("movie-name") 
-let movieImg = document.getElementById("movie-img")
-let movieActors = document.getElementById("actors")
+let movieTitle = document.getElementById("movie-name") //Para que aparezca en la búsqueda el título de la película
+let movieImg = document.getElementById("movie-img")    //Para que aparezca en la búsqueda el póster de la película
+let movieActors = document.getElementById("actors")    //Para que aparezca en la búsqueda nombre de los actores de la película
+let movieYear = document.getElementById("yearMovie")   //Para que aparezca en la búsqueda el año de la película
+let movieGenre = document.getElementById("movie-genre")//Para que aparezca en la búsqueda el género de la película
+
 movieTitle.innerHTML= movieData.Title
 movieImg.setAttribute("src",movieData.Poster) 
 movieActors.innerHTML =movieData.Actors
+movieYear.innerHTML = movieData.Year
+movieGenre.innerHTML =movieData.Genre
 }
 
 
