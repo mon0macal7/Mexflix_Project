@@ -17,8 +17,9 @@ movieGenre.innerHTML =movieData.Genre
 
 
 export let getMovieAPI = (buscarPeli) => {
+    console.log(buscarPeli)
     //Traer valor del input 
-  fetch ("https://omdbapi.com/?t= '' + ''" +`${buscarPeli}`+ "&apikey=5f698bec")
+  fetch ("https://omdbapi.com/?t=" +`${buscarPeli}`+ "&apikey=5f698bec")
   .then((response)=>{
       console.log(response)
       if(response.status==404){
