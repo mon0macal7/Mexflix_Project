@@ -15,10 +15,12 @@ console.log(getMovieAPIActors)*/
 let searchValue = document.getElementById ("searchInput").value
 console.log(searchValue)
 
-
-let searchMovie = ()=>{
+let searchMovie = () => {
+    //traer valor del input
     let searchValue = document.getElementById("searchInput").value 
     getMovieAPI (searchValue)
+    let movieCard = document.getElementById("searching-mov")
+    movieCard.hidden = false;
 }
 
 let searchButton= document.getElementById ("searchButton")

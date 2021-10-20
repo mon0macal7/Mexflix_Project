@@ -20,11 +20,7 @@
           </style>
     </head>
         <body>
-        <!-- Seccion Pantalla uno  -->
-         <main>
-            <h1>M&Movies</h1>
- 
-            <!-- Inicia pantalla uno -->
+        <!-- Inicia pantalla uno -->
             <div  id= "screen1" class="form-group">
                 <label id="name-label" for= "name">Nombre</label>
                   <input type="text"
@@ -34,6 +30,11 @@
                         placeholder="Nombre de usuario"
                         required/>
             </div>
+<!-- Seccion landing page   -->
+            <main>
+                <header>
+                    <h1>M&Movies</h1>
+                </header>
                
                <br>
                
@@ -51,7 +52,7 @@
 
         <!-- botón de búsqueda -->
       <main id="screen2">
-        <nav class="navbar navbar-light bg-light">
+        <nav>
             <div class="container-fluid">
               <a class="navbar-brand"></a>
               
@@ -60,16 +61,22 @@
              
             </div>
           </nav>
-             <a href="https://imgbb.com/"><img src="https://i.ibb.co/tZ3cSnP/logomov.png" alt="logomov" border="0"></a>
              
-            <div>
-                <h1 id="movie-name"></h1>
-                <img id="movie-img" src="">
-                <p id="actors"></p>
-                <p id="yearMovie"></p>
-                <p id="movie-genre"></p>
+             <!-- caracteristicas de la película/Card bootstrap -->
+            <div hidden id="searching-mov" class="card" style= "auto">
+              <img src= "" id="movie-img" class="card-img-top" alt="...">
+                 <div class="card-body">
+                    <h5 class="card-title"  id="movie-name"></h5>
+                        <p class="card-text" id="actors"></p>
+                        <p class="card-text" id="yearMovie"></p>
+                        <p class="card-text" id="movie-genre"></p>
+                        <p class="card-text" id="movie-director"></p>
+                        <p class="card-text" id="movie-plot"></p>
+
+            </div>
             </div>
             <div class="form-group">
+
      <label id="name-label" for= "name">Nombre</label>
        <input type="text"
              name="name"
@@ -83,7 +90,7 @@
   <footer>
     <span>
      
-      <a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/"target="_blank"><i class="fab fa-linkedin"></i>Mónica Macal</a>
+      <a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/" target="_blank"><i class="fab fa-linkedin"></i>Mónica Macal</a>
       
     © Copyright 2021-Proyecto#4 "M&Movies" Monica Macal
     </span>
