@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/mon0macal7/Mexflix_Project/issues"
   },
-  "homepage": "https://github.com/mon0macal7/Mexflix_Project#readme"
+  "homepage": "https://github.com/mon0macal7/Mexflix_Project#readme",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1"
+  }
 }
