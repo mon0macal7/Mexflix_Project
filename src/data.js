@@ -6,7 +6,7 @@ let search =document.getElementById("searching-mov")
 for (const peli of movieData.Search) {
   console.log(peli)
   search.innerHTML += ' <div class= "card" style="width: 18rem;">'
-  + '<img src=' + `${peli.Poster}` + 'class="card-img-top" alt=' + '/>'
+  + '<img src=' + `${peli.Poster}` + 'class="card-img-top img-fluid rounded mx-auto" alt=' + '/>'
   +'<div class="card-body">'
   +' <h5 class="card-title"> '+ `${peli.Title}`+'</h5>'
   + ' <p class="card-text">' + `${peli.Year}` + '</p>'
@@ -131,11 +131,11 @@ let renderingSelectionMovieDrama = (data) => {
   +' <h5 class="card-title"> '+ `${data.Title}`+'</h5>'
   + '</div>'
   + '<ul class="list-group list-group-flush">'
-  + '<p> <br> Año:' + `${data.Year}`+ '</p>'
-  + '<p> <br> Género:' + `${data.Genre}`+ '</p>'
+  + '<p> <br> Año:'  + `${data.Year}`+ '</p>'
+  + '<p> <br> Género:'  + `${data.Genre}`+ '</p>'
   + '<p> <br> Director:'  + `${data.Director}`+ '</p>'
   + '</ul>'
-  + '<p> <br> Resumen:' + `${data.Plot}`+ '</p>'
+  + '<p> <br>  Resumen:' + `${data.Plot}`+ '</p>'
   + '<div class="card-body">'
   + '<a href="#" class="card-link"></a>'
  + '</div>'

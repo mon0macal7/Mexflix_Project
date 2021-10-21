@@ -5,10 +5,18 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 }
 
+
+
 h1{
     text-align: center;
     background-color: #2ec4b6;
     font-family: 'Balsamiq Sans', cursive;
+}
+
+nav{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    justify-content: center;
 }
 
 .logo{
@@ -20,7 +28,16 @@ h1{
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    row-gap: 2em;
-    column-gap: 2em;
+    margin: 7%;
+    width: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
 
+.container-1{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    row-gap: 5px;
+    column-gap: 5px;
 }

@@ -1,4 +1,5 @@
 //control pantallas
+
 document.getElementById("screen-1").hidden = false
 document.getElementById("screen-2").hidden = true
 let access = document.getElementById("go")
@@ -10,6 +11,18 @@ access.addEventListener('click',function(){
 
 } )
 
+let acceder = document.getElementById ("entry")
+acceder.addEventListener("click",function(){
+    let usuario = document.getElementById ("name").value
+    let password= document.getElementById ("password").value
+    if(usuario =="MMH" && password== "232531"){
+        document.getElementById("screen-1").hidden=true
+        document.getElementById("screen-2").hidden=false
+    }else{
+    alert("Intruso,fuera de aquí")
+}
+    
+})
 
 //Aquí va la comunicacion con el DOM 
 import { getMovieAPI } from "./data.js";
@@ -21,6 +34,7 @@ console.log(getMovieAPIActors)*/
 
 let searchValue = document.getElementById ("searchInput").value
 console.log(searchValue)
+
 
 let searchMovie = () => {
     //traer valor del input
