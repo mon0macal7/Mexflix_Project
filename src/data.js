@@ -1,8 +1,20 @@
 //solo hacemos las consultas a las API
 let renderingMovie = (movieData) => {
-    console.log(movieData)
+    console.log(movieData.Search.lenght)
 
-let movieTitle = document.getElementById("movie-name") //Aparece en la búsqueda el título de la película
+let search =document.getElementById("searching-mov")
+for (const peli of movieData.Search) {
+  console.log(peli)
+  search.innerHTML += ' <div class= "card" style="width: 18rem;">'
+  + '<img src=' + `${peli.Poster}` + ' class="card-img-top" alt=' + '/>'
+  +'<div class="card-body">'
+  +' <h5 class="card-title"> '+ `${peli.Title}`+'</h5>'
+  + ' <p class="card-text">' + `${peli.Year}` + '</p>'
+  +'</div>'
++'</div>'
+}
+}
+/*let movieTitle = document.getElementById("movie-name") //Aparece en la búsqueda el título de la película
 let movieImg = document.getElementById("movie-img")    // Aparece en la búsqueda el póster de la película
 let movieActors = document.getElementById("actors")    // Aparece en la búsqueda nombre de los actores de la película
 let movieYear = document.getElementById("yearMovie")   //Aparece en la búsqueda el año de la película
@@ -17,13 +29,13 @@ movieYear.innerHTML = "Año: "  + movieData.Year
 movieGenre.innerHTML = "Género: "  +  movieData.Genre
 movieDirector.innerHTML = "Director: "  + movieData.Director
 moviePlot.innerHTML = "Sinopsis: "  +  movieData.Plot
-}
+}*/
 
 
 export let getMovieAPI = (buscarPeli) => {
     console.log(buscarPeli)
     //Traer valor del input 
-  fetch ("https://omdbapi.com/?t=" +`${buscarPeli}`+ "&apikey=5f698bec")
+  fetch ("https://omdbapi.com/?s=" +`${buscarPeli}`+ "&apikey=5f698bec")
   .then((response)=>{
       console.log(response)
       if(response.status==404){
@@ -45,16 +57,15 @@ export let getMovieAPI = (buscarPeli) => {
 let renderingSelectionMovie = (data) => {
   console.log(data)
   let selectionMovies = document.getElementById("Recomendaciones")  
-  selectionMovies.innerHTML += ' <div class= "card" style="width: 18rem;">'
-  + '<img src=' + `${data.Poster}` + ' class="card-img-top" alt=' + `${data.Title}` +'/>'
+  selectionMovies.innerHTML += '<div class= "card" style= "width: 18rem; margin:2%; text align: center;" >'
+  + '<img src=' + `${data.Poster}` + ' class="card-img-top" alt=' + `${data.Title}`+'/>'
   + '<div class="card-body">'
   +' <h5 class="card-title"> '+ `${data.Title}`+'</h5>'
-  +' <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card content.</p>'
   + '</div>'
   + '<ul class="list-group list-group-flush">'
-  + '<li> Año:' + `${data.Year}`+ '</li>'
-  + '<li> Género:' + `${data.Genre}`+ '</li>'
-  + '<li> Director:'  + `${data.Director}`+ '</li>'
+  + '<p> Año:' + `${data.Year}`+ '</p>'
+  + '<p> Género:' + `${data.Genre}`+ '</p>'
+  + '<p> Director:'  + `${data.Director}`+ '</p>'
   + '</ul>'
   + '<p>Resumen:' + `${data.Plot}`+ '</p>'
   + '<div class="card-body">'
@@ -63,9 +74,9 @@ let renderingSelectionMovie = (data) => {
  + '</div>'
 }
 
-//crear pre seleccion con array
+//crear preseleccion con array
 
-let preSelectedMovies = [ "tt1321510", "tt2948372" , "tt3890160" , "tt0445922"]
+let preSelectedMovies = [ "tt1321510", "tt0249462", "tt2948372" , "tt3890160" , "tt0445922"]
 for (const movieItem of preSelectedMovies){
   console.log(movieItem)
   fetch ("https://omdbapi.com/?i=" + movieItem + "&apikey=5f698bec")
@@ -74,10 +85,21 @@ for (const movieItem of preSelectedMovies){
   .catch((error) => console.log (error))
 
 }
+//iterar seleccion con fetch
+
+for(const item of preSelectedMovies){
+  fetch ("https://omdbapi.com/?i=" +item + "&apikey=5f698bec")
+  .then ((response)=> response.json())
+  .then((data) => renderingSelectionMovie(data))
+  .catch((error)=> console.log(error))
+}
+//Renderear peliculas   Biopic
+
+
 
 //Crear seccion Biopic
 
- let selectionMoviesB =[ "tt0350258" , "tt1727824" , "tt0450188" , "tt0421082" , "tt0368794" ]
+ let selectionMoviesB =[ "tt0350258" , "tt1727824" , "tt0450188" , "tt0421082" , "tt0368794"]
  for (const movieItem of selectionMoviesB){
   console.log(movieItem)
   fetch ("https://omdbapi.com/?i=" + movieItem + "&apikey=5f698bec")
@@ -86,12 +108,12 @@ for (const movieItem of preSelectedMovies){
   .catch((error) => console.log (error))
 
 }
-
+//Renderear peliculas de  Drama 
 
 
 //Crear seccion Drama 
 
-let selectionMoviesD = [ ,"tt5363618", "tt3783958", "tt0408236"]
+let selectionMoviesD = ["tt1707386", "tt1485796", "tt5363618", "tt3783958", "tt0408236"]
 for (const movieItem of selectionMoviesD){
   console.log(movieItem)
   fetch ("https://omdbapi.com/?i=" + movieItem + "&apikey=5f698bec")
@@ -100,12 +122,13 @@ for (const movieItem of selectionMoviesD){
   .catch((error) => console.log (error))
 
 }
+//Renderear peliculas de preselección
 
 
 
 //Crear sección Comedia
 
-let selectionMoviesC = ["tt0795421" , "tt0372824" , "tt0105417", "tt0446029" ]
+let selectionMoviesC = ["tt0795421" , "tt0372824" , "tt0105417", "tt0446029", "tt3470600" ]
 for (const movieItem of selectionMoviesC){
   console.log(movieItem)
   fetch ("https://omdbapi.com/?i=" + movieItem + "&apikey=5f698bec")
@@ -114,6 +137,4 @@ for (const movieItem of selectionMoviesC){
   .catch((error) => console.log (error))
 
 }
-
-
 
