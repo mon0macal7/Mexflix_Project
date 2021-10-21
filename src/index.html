@@ -21,11 +21,12 @@
     </head>
         <body>
 
-          <!-- Inicia pantalla uno -->
-          <img class="logo" src="../assets/logomov.png" alt="Logo">
-          
-            <div  id= "screen1" class="form-group">
-                <label id="name-label" for= "name">Nombre </label>
+ <!-- Inicia pantalla uno -->
+ <section id="screen-1">
+          <img id= "go" class="logo" src="../assets/logomov.png" alt="Logo">
+          <section id="validacion">
+            <div class="form-group">
+                <label id="name-label" for= "name"> Nombre </label>
                   <input type="text"
                         name="name"
                         id="name"
@@ -47,16 +48,19 @@
              </div>
 
              <button id="entry">Entrar</button>
+            </section>
+   </section>           
+
             
                                    <!-- Sección landing page   -->
-
+<main id="screen-2">
 <!-- encabezado -->
               <header>
                   <h1>M&Movies</h1>
               </header>
 
  <!-- botón de búsqueda -->
-      <main>
+  
         <nav>
             <div class="container-fluid">
               <a class="navbar-brand"></a>
@@ -69,7 +73,7 @@
 
             <div hidden id="searching-mov" class="card" style= "width: 18rem;">
               <img src= "" id="movie-img" class="card-img-top" alt="...">
-                 <div class="card-body">
+                 <div href= "#info-peli"class="card-body">
                     <h5 class="card-title"  id="movie-name"></h5>
                         <p class="card-text" id="actors"></p>
                         <p class="card-text" id="yearMovie"></p>
@@ -97,7 +101,7 @@
                 <section class="container-recomendaciones" id="Comedia"></section>
          </div>
   
-</main>    
+    
     <!-- Inicia footer -->
   <footer>
     <span>
@@ -107,6 +111,8 @@
     © Copyright 2021-Proyecto#4 "M&Movies" Monica Macal
     </span>
    </footer>
+  </main>
             <script src="index.js" type= "module"></script>
+            <script src="app.js"></script>
         </body>
     </html>

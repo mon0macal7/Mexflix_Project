@@ -1,8 +1,15 @@
 //control pantallas
-/*document.getElementById("screen1").hidden = false
-document.getElementById("screen2").hidden = true
-let access = document.getElementById("entry")
-access*/
+document.getElementById("screen-1").hidden = false
+document.getElementById("screen-2").hidden = true
+let access = document.getElementById("go")
+access.addEventListener('click',function(){
+   
+
+    document.getElementById("screen-1").hidden = true
+    document.getElementById("screen-2").hidden = false
+
+} )
+
 
 //Aquí va la comunicacion con el DOM 
 import { getMovieAPI } from "./data.js";
@@ -25,5 +32,9 @@ let searchMovie = () => {
 
 let searchButton= document.getElementById ("searchButton")
 searchButton.addEventListener('click', searchMovie)
+
+
+
+
 //darle funcion al boton de busqueda
 
