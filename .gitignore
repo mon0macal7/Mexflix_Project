@@ -1,6 +1,10 @@
+
 #ignorar estos archivos
 
-/node_modules
+/.vscode,
+.eslintrc.json,
+node_modules
 package-lock.json
+
 
 

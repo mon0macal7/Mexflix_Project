@@ -10,3 +10,17 @@ h1{
     background-color: #2ec4b6;
     font-family: 'Balsamiq Sans', cursive;
 }
+
+.logo{
+    text-align: center;
+    justify-content: center;
+
+}
+.container-recomendaciones {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    row-gap: 2em;
+    column-gap: 2em;
+
+}
