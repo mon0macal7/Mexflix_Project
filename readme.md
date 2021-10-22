@@ -77,9 +77,11 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 
 La visualización de la pantalla 1 permite al usuario acceder mediante el atajo de clickear en la imagen ó ingresar mediante un formulario con usuario y contraseña.
 
-En la pantalla 2, se muestra Título de la página botón de búsqueda y botones para acceder a cada sección del catálogo.
+En la pantalla 2, se muestra Título de la página botón de búsqueda y botones para acceder 
+a cada sección del catálogo.
 
-![Prototipo screen 2](.src/../assets/prototype.png)
+* Producto final:
+![Prototipo screen 2](.src/../assets/final.page.png)
 ##  CopyRight
 
 © Copyright 2021-Proyecto#4- Mexflix streaming by Monica Macal
