@@ -1,18 +1,74 @@
 body{
-    background: #E0EAFC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-image: url("https://images.pexels.com/photos/7234215/pexels-photo-7234215.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-size: cover;
+    min-width: 300px;
 }
 
+/* Pantalla de acceso */
 
+#screen-1{
+    background-attachment: fixed;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    background-size:cover;
+    background-repeat: no-repeat;
+   
+ }
 
+/* Logo */
+
+#go{
+display: block;
+margin: auto;
+border-radius: 15px;
+box-shadow: 6px 3px #2E294E;
+padding-bottom: 7px;
+ padding-top: 20px;
+}
+/* Pantalla de acceso */
+
+#screen-2{
+   background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ ;
+}
+/* Formulario */
+
+.form-control {
+    display:inline-block;
+    width: 30%;
+    padding: .375rem .75rem; 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #c3cdc8;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+}
+
+/* Titulo principal */
 h1{
     text-align: center;
     background-color: #2ec4b6;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: #00635D;
 }
-
+/* Títulos de secciones*/
+h2{
+    text-align: center;
+    background-color: #2ec4b6;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 30px;
+    color: #5B618A;
+}
+/* Barra de navegación*/
 nav{
     padding-bottom: 7px;
     padding-top: 7px;
@@ -22,8 +78,13 @@ nav{
 .logo{
     text-align: center;
     justify-content: center;
+    border-width: 5px;
+    border-radius: 3px;
+   
 
 }
+
+/* Contenedor del cátalogo de peliculas */
 .container-recomendaciones {
     display: flex;
     flex-direction: row;
@@ -41,3 +102,13 @@ nav{
     row-gap: 5px;
     column-gap: 5px;
 }
+
+/* footer */
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }

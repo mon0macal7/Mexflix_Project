@@ -3,27 +3,38 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        
+        <title>Mexflix_Project</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
         
 <!-- Link bootstrap -->
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        
-<!-- Link Google Font -->
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-          </style>
+<!-- Link fontawesome  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Link Google Fonts -->
+
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+            </style>
+            <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+            </style> 
     </head>
         <body>
 
  <!-- Inicia pantalla uno -->
+
  <section id="screen-1">
-          <img id= "go" class="logo" src="../assets/logomov.png" alt="Logo">
+          <img id= "go" class="logo" src="https://raw.githubusercontent.com/mon0macal7/Mexflix_Project/development/assets/logomov.png" alt="Logo">
+          
+          <br>
+
           <section id="validacion">
             <div class="form-group">
                 <label id="name-label" for= "name"> Nombre </label>
@@ -47,6 +58,9 @@
                         required/>
              </div>
 
+             <br>
+
+
              <button id="entry">Entrar</button>
             </section>
    </section>           
@@ -57,6 +71,7 @@
 <!-- encabezado -->
               <header>
                   <h1>M&Movies</h1>
+                  
               </header>
 
  <!-- botón de búsqueda -->
@@ -81,9 +96,11 @@
            
             
  <!-- Sección peliculas -->
+ <div id="modal">
+</div>
          <div>
           <h2><em>Recomendaciones</em></h2>
-                <section  class="container-recomendaciones" id="Recomendaciones"> </section>
+                <section  class="container-recomendaciones" id="Recomendaciones"></section>
                 <!-- Sección Biopic -->
           <h2><em>Biopic</em></h2>
                 <section class="container-recomendaciones" id="Biopic"></section>
@@ -98,15 +115,21 @@
     
     <!-- Inicia footer -->
   <footer>
-    <span>
-     
-      <a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/" target="_blank"><i class="fab fa-linkedin"></i>Mónica Macal</a>
-      
-    © Copyright 2021-Proyecto#4 "M&Movies" Monica Macal
+    <span id="Contact">
+        <h2>Contact</h2>
+        <p>You can find me on:</p>
+          <ul>
+            <p><a href="https://github.com/mon0macal7" id="profile-link" target="_blank">GitHub<i class="fab fa-github"></i></a></p>
+            
+            <p><a href="https://www.linkedin.com/in/m%C3%B3nica-macal-b35989140/" target="_blank">Linkedin<i class="fab fa-linkedin"></i></a></pi>
+             <p>© Copyright 2021-Proyecto#4 at Ajusco Bootcamp "M&Movies" Monica Macal Hernández</p>
     </span>
    </footer>
   </main>
+
             <script src="index.js" type= "module"></script>
             <script src="app.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
         </body>
     </html>
