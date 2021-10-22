@@ -4,11 +4,9 @@
 
     1. Descripción
     2. Definición de Usuario e Historias de usuario (UX)
-    3. Criterios de aceptación
-    4. Requerimientos técnicos
-    5. Edición Hacker 
-    6. Pseudocódigo
-    7. 
+    3. Requerimientos técnicos
+    4. Pseudocódigo
+    5. Producto final
    
 ---
 ## 1. Descripción
@@ -52,9 +50,36 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 
 ![Diagrama de flujo](.src/../assets/melody_flex-2.jpeg)
 
-![Prototipo screen 1](.src/../assets/Proto_screen1.png)
+![Prototipo screen 1](.src/../assets/prototypeScreen1.png)
 ![Prototipo screen 2](.src/../assets/prototype.png)
 
+4.Pseudocódigo 
+### 📋
+## Sección HTML
+
+* Se crean las pantallas
+* se crean las secciones de nuestro catálogo
+* Se utiliza una plantilla de barra de navegación y card mediante link de bootstrap
+
+## Sección index.js
+
+* En esta sección se controla el DOM
+* Se asigna funcionalidad a los botones de búsqueda
+## Sección data.js
+
+* Se realizan consultas a la API de las peículas, posteriormente se crea una fx parta la búsqueda.
+* Para que el contenido sea dinámico se itera mediante la fx: FOR OF
+* Se declara una función para renderizar cada sección
+* Se crea un arreglo con las ID de las peliculas preseleccionadas
+* Se imprime en el browser mediante la propiedad: INNER HTML
+
+## 7. Testing
+
+La visualización de la pantalla 1 permite al usuario acceder mediante el atajo de clickear en la imagen ó ingresar mediante un formulario con usuario y contraseña.
+
+En la pantalla 2, se muestra Título de la página botón de búsqueda y botones para acceder a cada sección del catálogo.
+
+![Prototipo screen 2](.src/../assets/prototype.png)
 ##  CopyRight
 
 © Copyright 2021-Proyecto#4- Mexflix streaming by Monica Macal

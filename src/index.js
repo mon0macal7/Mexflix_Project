@@ -1,4 +1,4 @@
-//control pantallas
+                                  //control pantallas
 
 document.getElementById("screen-1").hidden = false
 document.getElementById("screen-2").hidden = true
@@ -24,17 +24,12 @@ acceder.addEventListener("click",function(){
     
 })
 
-//Aquí va la comunicacion con el DOM 
+                          //Aquí va la comunicacion con el DOM 
 import { getMovieAPI } from "./data.js";
 console.log(getMovieAPI)
 
-/*import { getMovieAPIActors} from "./data.js";
-console.log(getMovieAPIActors)*/
-
-
 let searchValue = document.getElementById ("searchInput").value
 console.log(searchValue)
-
 
 let searchMovie = () => {
     //traer valor del input
