@@ -1,8 +1,8 @@
-                                  //control pantallas
+                                  //control de las pantallas
 
-document.getElementById("screen-1").hidden = false
+document.getElementById("screen-1").hidden = false  //esconde la pantalla 1
 document.getElementById("screen-2").hidden = true
-let access = document.getElementById("go")
+let access = document.getElementById("go")  // acceso con el click al logo
 access.addEventListener('click',function(){
    
 
@@ -10,6 +10,7 @@ access.addEventListener('click',function(){
     document.getElementById("screen-2").hidden = false
 
 } )
+                                // acceso con Usuario y contraseña
 
 let acceder = document.getElementById ("entry")
 acceder.addEventListener("click",function(){
@@ -25,6 +26,8 @@ acceder.addEventListener("click",function(){
 })
 
                           //Aquí va la comunicacion con el DOM 
+                          
+   //Se importa la selección de peliculas desde la API                       
 import { getMovieAPI } from "./data.js";
 console.log(getMovieAPI)
 
@@ -45,5 +48,5 @@ searchButton.addEventListener('click', searchMovie)
 
 
 
-//darle funcion al boton de busqueda
+
 

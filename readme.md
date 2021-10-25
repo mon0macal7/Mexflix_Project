@@ -1,5 +1,5 @@
 # M&Movies 
----
+
 Índice
 
     1. Descripción
@@ -11,25 +11,32 @@
 ---
 ## 1. Descripción
 
-En esta página se muestra un catálogo de algunas películas musicales, y se divide en tres subgéneros:
-* Musicales de drama
-* Musicales de comedia
-* Biopics musicales
+En esta página se muestra un catálogo de 32 películas musicales las cuáles  se dividen en cuatro secciones:
 
-## 2. Definición de usuario:
+-Recomendaciones
+-Musicales de drama
+-Musicales de comedia
+-Biopics musicales
+---
 
+## 2. Historia de usuario
 
+Uno de los sectores más afectados por la pandemia fue el artístico; teatros y recintos musicales se vieron afectados, de igual manera diversos centros de enseñanza musical.
 
-El grupo de usuarios al que va dirigido el producto osn profesores y estudiantes de teatro, danza y música.
-La utilizacion de la plataforma puede ser didáctica para su aprendizaje y formación. 
+La enseñanza vía remota suele ser tediosa para muchos estudiantes, quienes prefieren ver series y tik toks. 
 
-## Historias de usuario:
+Este sitio es un punto de encuentro entre ambas generaciones, en la cual los profesores pueden utilizarla como recurso  didáctico y recreativo.
+
+---
+## Objetivos :
 
  - Los usuarios quieren leer una selección adecuada de películas recomendadas para sus intereses.
 
 - El usuario quiere ver un buen catálogo de películas ya preseleccionadas.
 
 - El usuario quiere poder buscar para encontrar más películas por título, género y actores. 
+  
+---
 
 ## Proceso de flujo de trabajo
 
@@ -37,15 +44,13 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 
 ![Texto alternativo](.src/../assets/Kanban_process.png)
 
-
+---
 ## 3. UI(user interface)
 
 ![Pantalla uno](.src/../assets/screen1.jpg)
 ![Pantalla dos](.src/../assets/screen2.jpg)
-![Pantalla tres](.src/../assets/screen3.jpg)
-![Pantalla cuatro](.src/../assets/screen4.jpg)
-![Pantalla cinco](.src/../assets/screen5.jpg)
 
+---
 ## Diagrama de flujo
 
 ![Diagrama de flujo](.src/../assets/melody_flex-2.jpeg)
@@ -53,12 +58,15 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 ![Prototipo screen 1](.src/../assets/prototypeScreen1.png)
 ![Prototipo screen 2](.src/../assets/prototype.png)
 
-4.Pseudocódigo 
-### 📋
+---
+
+
+### 4.Pseudocódigo  📋
+
 ## Sección HTML
 
 * Se crean las pantallas
-* se crean las secciones de nuestro catálogo
+* Se crean las secciones de nuestro catálogo
 * Se utiliza una plantilla de barra de navegación y card mediante link de bootstrap
 
 ## Sección index.js
@@ -67,12 +75,13 @@ Se utiliza el método agile para distribuir las tareas del proyecto
 * Se asigna funcionalidad a los botones de búsqueda
 ## Sección data.js
 
-* Se realizan consultas a la API de las peículas, posteriormente se crea una fx parta la búsqueda.
+* Se realizan consultas a la API de las películas, posteriormente se crea una fx para la búsqueda.
 * Para que el contenido sea dinámico se itera mediante la fx: FOR OF
 * Se declara una función para renderizar cada sección
 * Se crea un arreglo con las ID de las peliculas preseleccionadas
 * Se imprime en el browser mediante la propiedad: INNER HTML
 
+---
 ## 7. Testing
 
 La visualización de la pantalla 1 permite al usuario acceder mediante el atajo de clickear en la imagen ó ingresar mediante un formulario con usuario y contraseña.

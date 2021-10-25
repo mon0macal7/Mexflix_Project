@@ -19,6 +19,7 @@ for (const peli of movieData.Search) {
                     //Exportar función para búsqueda de pelicula
 export let getMovieAPI = (buscarPeli) => {
     console.log(buscarPeli)
+    
     //Traer valor del input 
   fetch ("https://omdbapi.com/?s=" +`${buscarPeli}`+ "&apikey=5f698bec")
   .then((response)=>{
